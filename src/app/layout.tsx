@@ -4,8 +4,8 @@ import { Poppins } from 'next/font/google'
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Paypress - The Ultimate Transaction Solution",
-  description: "Discover a smarter way to manage your transactions with Paypress",
+  title: "PharmaHack",
+ 
 }
 
 const poppins = Poppins({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-[#0A1F0A]`}>
+      <body className={`${poppins.className} bg-[#FFFFFF]`}>
         {children}
       </body>
     </html>

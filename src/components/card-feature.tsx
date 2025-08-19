@@ -1,33 +1,82 @@
-import { Button } from "@/components/ui/button"
+// components/WorkingProcess.tsx
+
+import Image from "next/image";
 
 
-export default function CardFeature() {
+const WorkingProcess = () => {
   return (
-    <section className="px-4 lg:px-6 py-16 relative">
-      <img src='/star.svg' alt="star"className="absolute bottom-1/3 left-1/3 opacity-50 pointer-events-none" />
+    <section className="bg-blue-600 text-white py-16 px-6 relative">
 
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="">
-            <img
-              src="/card.png"
-              alt="PayPress Card"
-              className=""
-                       
-            />
-          </div>
-          <div className="space-y-6 mx-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight capitalize">
-            PayPress Card – fast, easy, secure!
-            </h2>
-            <p className="text-white/70 text-lg">
-            Discover your ideal credit card with ease. Our comprehensive selection caters to every financial need and lifestyle. 
+      {/* Title */}
+      <div className="text-center mb-12">
+        <span className="bg-white text-blue-600 px-4 py-1 rounded-full text-sm font-semibold">
+          How It Works
+        </span>
+        <h2 className="text-3xl font-bold mt-4">Working Process</h2>
+      </div>
+
+      {/* Content */}
+      <div className="grid lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
+        {/* Left Side (Laptop) */}
+        <div className="flex justify-between">
+          <Image
+            src="/dell.png"
+            alt="Computer"
+            width={500}
+            height={500}
+            className="w-2/3 drop-shadow-2xl"
+          />
+        </div>
+        <div className="grid grid-cols-2 gap-6 relative ">
+          {/* Step 01 */}
+          <div className="bg-white  text-blue-600 p-6 rounded-2xl shadow-lg z-10">
+            <h3 className="font-bold text-lg">01</h3>
+            <h4 className="font-semibold mt-2">Connect and Collaborate</h4>
+            <p className="text-sm mt-2">
+              Link pharmacies with insurers for seamless claim processing and
+              communication.
             </p>
-            <Button className="bg-[#30E030] text-white  rounded-3xl hover:bg-[#30E030]/90">Learn More</Button>
+          </div>
+
+          {/* Step 02 */}
+          <div className=" p-6 relative  ">
+          
+            <h3 className="font-bold text-lg">02</h3>
+            <h4 className="font-semibold mt-2">Create your free account</h4>
+            <p className="text-sm mt-2">
+              Register as a pharmacy or insurance provider to get started instantly.
+            </p>
+                    <Image
+            src="/pills.png"
+            alt="Pills"
+              width={900}
+            height={900}  
+            className="absolute -top-12 right-0 opacity-90 "
+          />
+          </div>
+
+          {/* Step 03 */}
+          <div className="p-6 ">
+            <h3 className="font-bold text-lg">03</h3>
+            <h4 className="font-semibold mt-2">Create your free account</h4>
+            <p className="text-sm mt-2">
+              Register as a pharmacy or insurance provider to get started instantly.
+            </p>
+          </div>
+
+          {/* Step 04 */}
+          <div className="bg-white text-blue-600 p-6 rounded-2xl shadow-lg">
+            <h3 className="font-bold text-lg">04</h3>
+            <h4 className="font-semibold mt-2">Connect and Collaborate</h4>
+            <p className="text-sm mt-2">
+              Link pharmacies with insurers for seamless claim processing and
+              communication.
+            </p>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
+export default WorkingProcess;

@@ -1,8 +1,8 @@
 import Header from "@/components/header"
 import Hero from "@/components/hero"
 import Stats from "@/components/stats"
-import Features from "@/components/features"
-import DigitalBrowser from "@/components/digital-browser"
+
+import Services from "@/components/digital-browser"
 import CardFeature from "@/components/card-feature"
 import Testimonials from "@/components/testimonials"
 import FAQ from "@/components/faq"
@@ -20,13 +20,12 @@ export default function Home() {
      <Header />
       <div id="hero">
         <Hero />
+      </div>
+      <div id="about">
         <Stats />
       </div>
-      <div id="features">
-        <Features />
-      </div>
-      <div id="digital-browser">
-        <DigitalBrowser />
+      <div id="services">
+        <Services/>
       </div>
       <div id="card-feature">
         <CardFeature />
@@ -34,12 +33,8 @@ export default function Home() {
       <div id="testimonials">
         <Testimonials />
       </div>
-      <div id="faq">
-        <FAQ />
-      </div>
-      <div id="app-download">
-        <AppDownload />
-      </div>
+  
+    
       <Footer />
       <BounceScroll />
     </main>

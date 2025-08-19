@@ -7,8 +7,8 @@ export default function Header() {
   const activeId = useScrollspy(
     [
       "hero",
-      "features",
-      "digital-browser",
+      "about",
+      "services",
       "card-feature",
       "testimonials",
       "faq",
@@ -19,8 +19,8 @@ export default function Header() {
 
   const navItems = [
     { href: "#hero", label: "Home" },
-    { href: "#features", label: "About Us" },
-    { href: "#digital-browser", label: "Our Services" },
+    { href: "#about", label: "About Us" },
+    { href: "#services", label: "Our Services" },
     { href: "#card-feature", label: "Workflow" },
     { href: "#testimonials", label: "Testimonials" },
 
