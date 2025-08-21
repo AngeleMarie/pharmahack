@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Eye, EyeOff, Mail, Lock } from "lucide-react";
 
 export default function Login() {
@@ -25,9 +26,11 @@ export default function Login() {
 
         {/* Google Sign In */}
         <button className="w-full flex items-center justify-center gap-2 border rounded-lg py-3 hover:bg-gray-100 transition mb-4">
-          <img
+          <Image
             src="https://www.svgrepo.com/show/475656/google-color.svg"
             alt="Google"
+            height={20}
+            width={20}
             className="w-5 h-5"
           />
           Sign in with Google
@@ -93,9 +96,9 @@ export default function Login() {
 
         {/* Footer links */}
         <div className="mt-6 flex justify-between text-sm text-gray-500">
-          <a href="/" className="hover:underline">
+          <Link href="/" className="hover:underline">
             Back To Home
-          </a>
+          </Link>
           <p>
             No Account yet ?{" "}
             <a href="/register" className="text-blue-500 font-medium hover:underline">
