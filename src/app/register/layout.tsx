@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Poppins } from 'next/font/google'
 import "../globals.css"
+import "react-phone-input-2/lib/style.css";
 
 export const metadata: Metadata = {
   title: "PharmaHack",
