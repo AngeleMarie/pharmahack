@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Eye, EyeOff, Mail, Lock } from "lucide-react";
 
 // Import Stepper
-import Stepper from "@/components/Stepper";
+import Stepper from "@/components/stepper";
 
 export default function Signup() {
   const [email, setEmail] = useState("");
