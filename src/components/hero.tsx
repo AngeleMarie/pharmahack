@@ -15,9 +15,9 @@ export default function Hero() {
         <div className="space-y-8 mx-2 sm:mx-4 md:mx-0">
           {/* Announcement */}
           <div className="relative my-8 md:my-12">
-            <div className="bg-white border-2 p-1 flex mx-auto text-xs sm:text-sm text-center border-[#EEEEEE] shadow-xl m-4 sm:m-6 rounded-md w-full sm:w-2/3 md:w-1/3">
+            <div className="bg-white border-2 p-1 flex md:mx-auto text-xs sm:text-sm text-center border-[#EEEEEE] shadow-xl m-4 sm:m-6 rounded-md w-full sm:w-2/3 md:w-1/3">
               What’s new? Instantly bill insurance for medications!{" "}
-              <MoveRight className="w-4 ml-2" />
+              <MoveRight className="w-3 md:w-4 mr-6 mt-1 md:mt-0 md:ml-2" />
             </div>
 
             {/* Heading */}
