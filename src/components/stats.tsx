@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -80,7 +81,7 @@ export default function HomeSections() {
 
             {/* CTA */}
             <Button className="mt-8 bg-[#4880FF] hover:bg-[#3765cc] px-6 py-2 rounded-full text-white text-lg">
-              Get Started
+              <Link href="/register">Get Started</Link>
             </Button>
           </div>
 

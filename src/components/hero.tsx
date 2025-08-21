@@ -40,7 +40,7 @@ export default function Hero() {
           {/* CTA Button */}
           <div className="flex justify-center">
             <Button className="bg-[#4880FF] text-white w-2/3 sm:w-1/3 md:w-1/5 rounded-xl py-3 flex justify-center hover:bg-[#4880FF]/90">
-              <p className="mx-auto text-sm sm:text-base">Our Process</p>
+              <a href="#working-process" className="mx-auto text-sm sm:text-base">Our Process</a>
             </Button>
           </div>
 
