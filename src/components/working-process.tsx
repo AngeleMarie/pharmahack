@@ -16,7 +16,7 @@ const WorkingProcess = () => {
       </div>
 
       {/* Content */}
-      <div className="grid lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
+      <div className="grid grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
         {/* Left Side (Laptop) */}
         <div className="flex justify-between">
           <Image
@@ -24,7 +24,7 @@ const WorkingProcess = () => {
             alt="Computer"
             width={500}
             height={500}
-            className="w-2/3 drop-shadow-2xl"
+            className="w-2/3 drop-shadow-2xl hidden md:block"
           />
         </div>
         <div className="grid grid-cols-2 gap-6 relative ">

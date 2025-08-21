@@ -2,13 +2,11 @@ import Header from "@/components/header"
 import Hero from "@/components/hero"
 import Stats from "@/components/stats"
 
-import Services from "@/components/digital-browser"
-import CardFeature from "@/components/card-feature"
+import Services from "@/components/services"
 import Testimonials from "@/components/testimonials"
-import FAQ from "@/components/faq"
-import AppDownload from "@/components/app-download"
 import Footer from "@/components/footer"
 import BounceScroll from "@/components/bounce-scroll"
+import WorkingProcess from "@/components/working-process"
 
 
 export default function Home() {
@@ -27,14 +25,13 @@ export default function Home() {
       <div id="services">
         <Services/>
       </div>
-      <div id="card-feature">
-        <CardFeature />
+      <div id="working-process">
+        <WorkingProcess />
       </div>
       <div id="testimonials">
         <Testimonials />
       </div>
   
-    
       <Footer />
       <BounceScroll />
     </main>

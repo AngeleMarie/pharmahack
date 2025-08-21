@@ -1,0 +1,15 @@
+<svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="64" height="64" rx="15" transform="matrix(1 0 0 -1 0 64)" fill="url(#paint0_linear_2126_12843)"/>
+<foreignObject x="2" y="2" width="80" height="80"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(4px);clip-path:url(#bgblur_0_2126_12843_clip_path);height:100%;width:100%"></div></foreignObject><rect data-figma-bg-blur-radius="8" x="0.5" y="-0.5" width="63" height="63" rx="14.5" transform="matrix(1 0 0 -1 10 73)" fill="#EEEEEE" fill-opacity="0.61" stroke="white"/>
+<circle cx="42.5" cy="40.5" r="13.5" stroke="#6EB94C" stroke-width="2"/>
+<circle cx="38.5" cy="37.5" r="1.5" fill="#6EB94C"/>
+<circle cx="47.5" cy="37.5" r="1.5" fill="#6EB94C"/>
+<path d="M47.7394 43.6607C47.6137 44.2829 47.3666 44.8741 47.0123 45.4008C46.6581 45.9274 46.2035 46.3792 45.6747 46.7302C45.1458 47.0812 44.553 47.3246 43.9301 47.4465C43.3072 47.5684 42.6664 47.5664 42.0443 47.4406C41.4221 47.3148 40.8309 47.0678 40.3042 46.7135C39.7775 46.3592 39.3258 45.9047 38.9748 45.3759C38.6238 44.847 38.3804 44.2542 38.2585 43.6313" stroke="#6EB94C" stroke-width="2" stroke-linecap="round"/>
+<defs>
+<clipPath id="bgblur_0_2126_12843_clip_path" transform="translate(-2 -2)"><rect x="0.5" y="-0.5" width="63" height="63" rx="14.5" transform="matrix(1 0 0 -1 10 73)"/>
+</clipPath><linearGradient id="paint0_linear_2126_12843" x1="32" y1="0" x2="32" y2="64" gradientUnits="userSpaceOnUse">
+<stop stop-color="#76CD4E"/>
+<stop offset="1" stop-color="#CAFFC9" stop-opacity="0.34"/>
+</linearGradient>
+</defs>
+</svg>

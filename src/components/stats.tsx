@@ -6,7 +6,7 @@ export default function HomeSections() {
   return (
     <main>
       {/* --- SECTION 1: Insurance Partners --- */}
-      <section className="py-12">
+      <section>
         <div className="max-w-7xl mx-auto px-4">
           {/* Title */}
           <h1 className="text-2xl md:text-3xl text-center font-bold text-[#242331] mb-10">
@@ -48,7 +48,7 @@ export default function HomeSections() {
       </section>
 
       {/* --- SECTION 2: Pharmacy Appeals --- */}
-      <section className="py-16">
+      <section className="pt-8">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* LEFT SIDE - TEXT */}
           <div>
