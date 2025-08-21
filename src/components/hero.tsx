@@ -33,7 +33,7 @@ export default function Hero() {
 
           {/* Description */}
           <p className="text-base sm:text-lg text-[#111827]/80 max-w-4xl text-center mx-auto px-2 sm:px-0">
-            Whether you're dispensing medication or processing coverage, our
+            Whether you are dispensing medication or processing coverage, our
             system ensures every step is smooth, accurate, and efficient.
           </p>
 
