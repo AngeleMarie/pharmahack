@@ -5,7 +5,7 @@ import { Mail } from "lucide-react";
 import Stepper from "@/components/stepper";
 import Image from "next/image";
 
-export default function ForgotPassword() {
+export default function Verify() {
   const [email, setEmail] = useState("");
 
   // Define steps
@@ -16,7 +16,7 @@ export default function ForgotPassword() {
   ];
 
   // Example: we are on step 1
-  const currentStep = 1;
+  const currentStep = 2;
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-white">
@@ -45,16 +45,16 @@ export default function ForgotPassword() {
       </div> 
           <div className="text-center mb-6">
            
-            <p className="mt-2 text-[#4880ff] text-lg font-semibold">Forgot Password</p>
+            <p className="mt-2 text-[#4880ff] text-lg font-semibold">Verify Email</p>
             <p className="text-sm text-gray-500 mt-1">
-              Enter your email to receive a link to reset your password
+              We have sent a verification link to <span className="text-[#4880ff] font-medium">angelarma2006@gmail.com</span>. Please check your inbox to confirm your account
             </p>
           </div>
 
           {/* Form */}
           
           <form className="flex flex-col gap-4">
-            <label className="text-sm text-gray-700 font-medium">Email</label>
+            <label className="text-sm text-gray-700 font-medium">Verification Code</label>
             <div className="relative">
               <Mail
                 className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
@@ -72,10 +72,16 @@ export default function ForgotPassword() {
               type="submit"
               className="bg-[#4880FF] text-white py-3 rounded-lg hover:bg-blue-600 transition font-medium"
             >
-              Send Code
+              Verify Email
             </button>
           </form>
 
+          <div className="mt-4 text-right text-sm text-gray-500">
+            Didn’t receive code?{" "}
+            <a href="#" className="text-[#4880ff] hover:underline">
+              Resend →
+            </a>
+          </div>
         </div>
       </div>
     </div>

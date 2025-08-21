@@ -28,9 +28,9 @@ export default function Stepper({ steps, currentStep }: StepperProps) {
         <div className="block lg:hidden absolute left-0 right-0 top-4 border-t-2 border-gray-200"></div>
 
         {/* Steps */}
-        <div className="flex lg:flex-col md:flex-row gap-x-8 gap-y-24 relative z-10">
+        <div className="flex lg:flex-col md:flex-row gap-x-24 gap-y-24 relative z-10">
           {steps.map((step) => {
-            const isActive = step.id === currentStep;
+            const isActive = step.id <= currentStep;
             return (
               <div key={step.id} className="flex items-center gap-3">
                 <div
@@ -38,7 +38,7 @@ export default function Stepper({ steps, currentStep }: StepperProps) {
                   ${
                     isActive
                       ? "bg-[#4880ff] text-white font-semibold shadow-[0_0_15px_5px_rgba(37,99,235,0.6)]"
-                      : "bg-white font-normal border-2 border-gray-200 text-gray-600"
+                      : "bg-white font-normal shadow-lg text-gray-600"
                   }`}
                 >
                   {step.id}

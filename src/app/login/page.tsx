@@ -21,7 +21,7 @@ export default function Login() {
               Pharma<span className="text-blue-500">Hack</span>
             </h1>
           </div>
-          <p className="mt-2 text-gray-600 font-medium">Sign In</p>
+          <p className="mt-2 text-[#111827] text-lg font-semibold">Sign In</p>
         </div>
 
         {/* Google Sign In */}
@@ -47,7 +47,8 @@ export default function Login() {
         <form className="flex flex-col gap-4 relative">
           {/* Email field with icon */}
           <div className="relative">
-            <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+            <label htmlFor="email" className="text-[#6B6B6B]"> Email </label>
+            <Mail className="absolute left-3 top-2/3 transform -translate-y-1/2 text-gray-400" size={20} />
             <input
               type="email"
               value={email}
@@ -59,7 +60,9 @@ export default function Login() {
 
           {/* Password field with lock icon + eye toggle */}
           <div className="relative">
-            <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+            <label htmlFor="email" className="text-[#6B6B6B]"> Password </label>
+
+            <Lock className="absolute left-3 top-2/3 transform -translate-y-1/2 text-gray-400" size={20} />
             <input
               type={showPassword ? "text" : "password"}
               value={password}
@@ -70,7 +73,7 @@ export default function Login() {
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+              className="absolute top-2/3 right-3 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
             >
               {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
             </button>
