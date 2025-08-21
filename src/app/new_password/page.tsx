@@ -6,7 +6,7 @@ import Stepper from "@/components/stepper";
 import Image from "next/image";
 
 export default function ForgotPassword() {
-  const [email, setEmail] = useState("");
+  
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 

@@ -120,9 +120,9 @@ export default function Signup() {
               <Lock className="absolute left-3 top-[3.1rem] text-gray-400" size={20} />
               <input
                 type={showPassword ? "text" : "password"}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Your password"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                placeholder="Confirm Your password"
                 className="border rounded-lg p-4 pl-10 pr-12 my-2 text-sm focus:ring-2 focus:ring-blue-400 outline-none w-full"
               />
               <button
