@@ -1,76 +1,71 @@
-// components/WorkingProcess.tsx
-
 import Image from "next/image";
-
 
 const WorkingProcess = () => {
   return (
-    <section className="bg-blue-600 text-white py-16 px-6 relative">
-
+    <section className="bg-blue-600 text-white py-16 px-4 sm:px-6 lg:px-12 relative">
       {/* Title */}
       <div className="text-center mb-12">
         <span className="bg-white text-blue-600 px-4 py-1 rounded-full text-sm font-semibold">
           How It Works
         </span>
-        <h2 className="text-3xl font-bold mt-4">Working Process</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mt-4">Working Process</h2>
       </div>
 
       {/* Content */}
-      <div className="grid grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
-        {/* Left Side (Laptop) */}
-        <div className="flex justify-between">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        {/* Left Side (Laptop Image) */}
+        <div className="flex justify-center lg:justify-end">
           <Image
             src="/dell.png"
             alt="Computer"
             width={500}
             height={500}
-            className="w-2/3 drop-shadow-2xl hidden md:block"
+            className="w-2/3 sm:w-3/4 md:w-2/3 lg:w-full drop-shadow-2xl hidden md:block"
           />
         </div>
-        <div className="grid grid-cols-2 gap-6 relative ">
+
+        {/* Right Side (Steps) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 relative">
           {/* Step 01 */}
-          <div className="bg-white  text-blue-600 p-6 rounded-2xl shadow-lg z-10">
+          <div className="bg-white text-blue-600 p-6 rounded-2xl shadow-lg">
             <h3 className="font-bold text-lg">01</h3>
             <h4 className="font-semibold mt-2">Connect and Collaborate</h4>
             <p className="text-sm mt-2">
-              Link pharmacies with insurers for seamless claim processing and
-              communication.
+              Link pharmacies with insurers for seamless claim processing and communication.
             </p>
           </div>
 
           {/* Step 02 */}
-          <div className=" p-6 relative  ">
-          
+          <div className="relative p-6  text-white rounded-2xl overflow-hidden">
             <h3 className="font-bold text-lg">02</h3>
             <h4 className="font-semibold mt-2">Create your free account</h4>
             <p className="text-sm mt-2">
               Register as a pharmacy or insurance provider to get started instantly.
             </p>
-                    <Image
-            src="/pills.png"
-            alt="Pills"
-              width={900}
-            height={900}  
-            className="absolute -top-12 right-0 opacity-90 "
-          />
+            <Image
+              src="/pills.png"
+              alt="Pills"
+              width={300}
+              height={300}
+              className="absolute -top-8 right-0 opacity-60 pointer-events-none hidden sm:block"
+            />
           </div>
 
           {/* Step 03 */}
-          <div className="p-6 ">
+          <div className="bg-white  md:bg-blue-600 text-blue-600 md:text-white p-6 rounded-2xl ">
             <h3 className="font-bold text-lg">03</h3>
-            <h4 className="font-semibold mt-2">Create your free account</h4>
+            <h4 className="font-semibold mt-2">Manage your workflow</h4>
             <p className="text-sm mt-2">
-              Register as a pharmacy or insurance provider to get started instantly.
+              Track, review, and update claims efficiently in one platform.
             </p>
           </div>
 
           {/* Step 04 */}
-          <div className="bg-white text-blue-600 p-6 rounded-2xl shadow-lg">
+          <div className="bg-blue-600  md:bg-white text-white md:text-blue-600 p-6 rounded-2xl md:shadow-lg ">
             <h3 className="font-bold text-lg">04</h3>
-            <h4 className="font-semibold mt-2">Connect and Collaborate</h4>
+            <h4 className="font-semibold mt-2">Receive insights</h4>
             <p className="text-sm mt-2">
-              Link pharmacies with insurers for seamless claim processing and
-              communication.
+              Get analytics and reports to improve your pharmacy and insurance collaboration.
             </p>
           </div>
         </div>

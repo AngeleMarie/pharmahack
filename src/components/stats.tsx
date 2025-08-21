@@ -20,7 +20,7 @@ export default function HomeSections() {
               alt="RSSB"
               width={200}
               height={200}
-              className="object-contain"
+              className="object-contain "
             />
             <Image
               src="/mmi.svg"
@@ -91,6 +91,7 @@ export default function HomeSections() {
               alt="Pharmacy Stats"
               width={600}
               height={500}
+              className="hidden md:block"
               
             />
           </div>
