@@ -1,4 +1,4 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { LineChart, Line, XAxis, YAxis,  Tooltip, Legend, ResponsiveContainer } from "recharts";
 
 const data = [
   { name: "2018", customers: 4000, sales: 2400 },

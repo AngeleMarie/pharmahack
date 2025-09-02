@@ -7,8 +7,7 @@ import { usePathname } from "next/navigation";
 import {
   LayoutDashboard,
   BarChart2,
-  SlidersHorizontal,
-  Package,
+
   Shield,
   Users,
   FileText,

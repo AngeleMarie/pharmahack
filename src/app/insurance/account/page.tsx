@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import TopBar from "@/components/topbar";
 import SideBar from "@/components/ins_sidebar";
 import BorderColorOutlinedIcon from "@mui/icons-material/BorderColorOutlined";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
-import { Bell, Search } from "lucide-react";
+import {  Search } from "lucide-react";
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import {
   DropdownMenu,
@@ -43,7 +43,7 @@ export default function Topbar() {
   ];
   // Convert "/dashboard" → "Dashboard"
   const pageTitle = pathname.split("/").pop()?.replace("-", " ") || "Home";
-  const formattedTitle = pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1);
+  // const formattedTitle = pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1);
 
   return (
     <section>
