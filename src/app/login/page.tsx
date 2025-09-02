@@ -1,14 +1,29 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { Eye, EyeOff, Mail, Lock } from "lucide-react";
+import { Eye, EyeOff, Mail, Lock, Loader2 } from "lucide-react";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const router = useRouter();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // Simulate API call delay
+    setTimeout(() => {
+      setLoading(false);
+      router.push("/pharmacy/dashboard");
+    }, 2000);
+  };
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-white">
@@ -16,7 +31,13 @@ export default function Login() {
         {/* Logo + Title */}
         <div className="text-center mb-6">
           <div className="flex justify-center mb-4">
-            <Image src="/logo.svg" alt="Logo" width={40} height={40} className="mx-2 " />
+            <Image
+              src="/logo.svg"
+              alt="Logo"
+              width={40}
+              height={40}
+              className="mx-2"
+            />
             <h1 className="text-2xl text-[#202224] font-semibold">
               Pharma<span className="text-blue-500">Hack</span>
             </h1>
@@ -25,7 +46,10 @@ export default function Login() {
         </div>
 
         {/* Google Sign In */}
-        <button className="w-full flex items-center justify-center gap-2 border rounded-lg py-3 hover:bg-gray-100 transition mb-4">
+        <button
+          disabled={loading}
+          className="w-full flex items-center justify-center gap-2 border rounded-lg py-3 hover:bg-gray-100 transition mb-4 disabled:opacity-50"
+        >
           <Image
             src="https://www.svgrepo.com/show/475656/google-color.svg"
             alt="Google"
@@ -44,10 +68,16 @@ export default function Login() {
         </div>
 
         {/* Form */}
-        <form className="flex flex-col gap-4 relative">
-          {/* Email field with icon */}
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-4 relative"
+        >
+          {/* Email */}
           <div className="relative">
-            <label htmlFor="email" className="text-[#6B6B6B]"> Email </label>
+            <label htmlFor="email" className="text-[#6B6B6B]">
+              {" "}
+              Email{" "}
+            </label>
             <Mail className="absolute left-3 top-2/3 transform -translate-y-1/2 text-gray-400" size={20} />
             <input
               type="email"
@@ -58,10 +88,12 @@ export default function Login() {
             />
           </div>
 
-          {/* Password field with lock icon + eye toggle */}
+          {/* Password */}
           <div className="relative">
-            <label htmlFor="email" className="text-[#6B6B6B]"> Password </label>
-
+            <label htmlFor="password" className="text-[#6B6B6B]">
+              {" "}
+              Password{" "}
+            </label>
             <Lock className="absolute left-3 top-2/3 transform -translate-y-1/2 text-gray-400" size={20} />
             <input
               type={showPassword ? "text" : "password"}
@@ -79,6 +111,7 @@ export default function Login() {
             </button>
           </div>
 
+          {/* Remember me + Forgot */}
           <div className="flex items-center justify-between my-2 text-sm">
             <label className="flex items-center gap-2">
               <input type="checkbox" className="w-4 h-4 text-blue-500" />
@@ -89,11 +122,20 @@ export default function Login() {
             </a>
           </div>
 
+          {/* Submit Button */}
           <button
             type="submit"
-            className="bg-[#4880FF] text-white py-3 rounded-lg hover:bg-blue-600 transition font-medium"
+            disabled={loading}
+            className="bg-[#4880FF] text-white py-3 rounded-lg hover:bg-blue-600 transition font-medium flex items-center justify-center disabled:opacity-70"
           >
-            Sign In
+            {loading ? (
+              <>
+                <Loader2 className="animate-spin mr-2 h-5 w-5" />
+                Signing In...
+              </>
+            ) : (
+              "Sign In"
+            )}
           </button>
         </form>
 
@@ -104,7 +146,10 @@ export default function Login() {
           </Link>
           <p>
             No Account yet ?{" "}
-            <a href="/register" className="text-blue-500 font-medium hover:underline">
+            <a
+              href="/register"
+              className="text-blue-500 font-medium hover:underline"
+            >
               Sign Up →
             </a>
           </p>
